@@ -12,4 +12,5 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | Horizontall | Easy | Complete | Linux | 9/6/21 | A lot harder than other easy boxes |
 | Knife | Easy | Complete | Linux | 8/28/21 | Kinda weird, didn't like it too much |
 | <a href="https://susmdt.github.io/Nigerald/HTB/Love"> Love </a>  | Easy | Complete | Windows | 8/19/21 | Pretty fun and simple |
-| Forge | Medium | Complete | Linux | 9/11/2021 | User was hard but super fun, root made me sad |
+| Forge | Medium | Complete | Linux | 9/11/2021 | User was hard but super fun, root was too easy |
+| Seal | Medium | Complete | Linux | 9/15/2021 | A decent box, root wasn't challenging |
