@@ -9,6 +9,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | ------------- | ------------- | ------------- |------------- |------------- |
 | Bounty Hunter | Easy | Linux | 8/30/21 | A little difficult, but very fun |
 | Cap | Easy | Linux | 8/03/21 | Very easy and good introductory box |
+| Explore | Easy | Android | 9/19/21 | Similar to Linux and back to the basics |
 | Horizontall | Easy | Linux | 9/6/21 | A lot harder than other easy boxes |
 | Knife | Easy | Linux | 8/28/21 | Kinda weird, didn't like it too much |
 | <a href="https://susmdt.github.io/Nigerald/HTB/Love"> Love </a>  | Easy | Windows | 8/19/21 | Pretty fun and simple |
