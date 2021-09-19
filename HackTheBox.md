@@ -1,6 +1,7 @@
 ---
 layout: default
 title: HackTheBox Directory
+classes: wide
 ---
 A list of my completed HackTheBox boxes. I will also have my writeups/walkthroughs for retired ones. Ordered by difficulty first, then name.
 <br />
