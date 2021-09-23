@@ -16,3 +16,4 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <a href="https://susmdt.github.io/Nigerald/HTB/Love"> Love </a>  | Easy | Windows | 8/19/21 | Pretty fun and simple |
 | Forge | Medium | Linux | 9/11/2021 | User was hard but super fun, root was too easy |
 | Seal | Medium | Linux | 9/15/2021 | A decent box, root wasn't challenging |
+| Monitors | Hard | Linux | 9/23/2021 | Solid box |
