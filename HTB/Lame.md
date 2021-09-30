@@ -1,6 +1,6 @@
 ---
 title: Hack The Box&#58; Lame
-permalink: /HTB/Love
+permalink: /HTB/Lame
 layout: default
 ---
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Lame_Big.png?raw=true" unselectable="on" class="Box_Logo" />
