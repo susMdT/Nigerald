@@ -96,3 +96,10 @@ You have new mail.
 root@lame:~# 
 ```
 We have successfully rooted the machine.
+
+# Bonus
+Something to note about this box is how many attack vectors there are and false leads. Version numbers for many services running were exploitable, but I had not done that on my initial attempt. 
+
+## Alternate Approach 
+
+## Failed Attack Vectors
