@@ -175,3 +175,5 @@ Exploit target:
 Will give us a root shell just like the previous method shown.
 ## Failed Attack Vectors
 There were many failed attack vectors, some of the notable ones were: FTP and MySQL no root password. This FTP version (2.3.4) is vulnerable to an exploit that didn't work. Additionally, access to the locally hosted MySql database as the root user required no password, but the credentials and information found in the database weren't applicable anywhere.
+
+--Dylan Tran 9/30/21
