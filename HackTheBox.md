@@ -8,6 +8,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 
 | Image | Box Name  | Difficulty | Platform | Date Rooted | Comments |
 | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Blue.png?raw=true" width="100%" height="100%" unselectable="on" /> | Blue | Easy | Linux | 10/6/21 | It's in the name |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/BountyHunter.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bounty Hunter | Easy | Linux | 8/30/21 | A little difficult, but very fun |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Cap.png?raw=true" width="100%" height="100%" unselectable="on" /> | Cap | Easy | Linux | 8/03/21 | Very easy and good introductory box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Explore.png?raw=true" width="100%" height="100%" unselectable="on" /> | Explore | Easy | Android | 9/19/21 | Similar to Linux and back to the basics |
