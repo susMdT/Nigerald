@@ -4,7 +4,8 @@ title: HackTheBox Directory
 classes: wide
 ---
 A list of my completed HackTheBox boxes. I will also have my writeups/walkthroughs for retired ones. Ordered by difficulty first, then name.
-*Writeups probably won't be create for a while as I am 
+<br />
+*Writeups probably won't be create for a while as I am grinding classes and CPTC practice
 <br />
 
 | Image | Box Name  | Difficulty | Platform | Date Rooted | Comments |
@@ -25,6 +26,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Previse.png?raw=true" width="100%" height="100%" unselectable="on" /> | Previse | Easy | Linux | 9/12/21 | Sort of difficult but rewarding |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Optimum.png?raw=true" width="100%" height="100%" unselectable="on" /> | Optimum | Easy | Windows | 10/10/21 | Not too easy or difficult |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Shocker.png?raw=true" width="100%" height="100%" unselectable="on" /> | Shocker | Easy | Linux | 10/6/21 | Slight enumeration |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bastard_Small.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bastard | Medium | Windows | 10/10/21 | Many exploits to sift through, but that's about it |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bolt.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bolt | Medium | Linux | 9/27/21 | Very difficult but enjoyable |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Forge.png?raw=true" width="100%" height="100%" unselectable="on" /> | Forge | Medium | Linux | 9/11/2021 | User was hard but super fun, root was too easy |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Seal.png?raw=true" width="100%" height="100%" unselectable="on" /> | Seal | Medium | Linux | 9/15/2021 | A decent box, root wasn't challenging |
