@@ -10,6 +10,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 
 | Image | Box Name  | Difficulty | Platform | Date Rooted | Comments |
 | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Arctic.png?raw=true" width="100%" height="100%" unselectable="on" /> | Arctic | Easy | Windows | 10/11/21 | The name implies how slow this box is |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bashed.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bashed | Easy | Linux | 10/7/21 | Simple stuff, easier with a special tool |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Beep.png?raw=true" width="100%" height="100%" unselectable="on" /> | Beep | Easy | Linux | 10/10/21 | Don't overthink it (Shocking) |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Blue.png?raw=true" width="100%" height="100%" unselectable="on" /> | Blue | Easy | Windows | 10/6/21 | It's in the name |
