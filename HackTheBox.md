@@ -19,6 +19,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Devel.png?raw=true" width="100%" height="100%" unselectable="on" /> | Devel | Easy | Windows | 10/6/21 | Simple with an interesting approach |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Driver.png?raw=true" width="100%" height="100%" unselectable="on" /> | Driver | Easy | Windows | 10/7/21 | Very specific and hard if you don't know |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Explore.png?raw=true" width="100%" height="100%" unselectable="on" /> | Explore | Easy | Android | 9/19/21 | Similar to Linux and back to the basics |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Grandpa.png?raw=true" width="100%" height="100%" unselectable="on" /> | Grandpa | Easy | Windows | 10/13/21 | Boomer tech part 2 |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Granny.png?raw=true" width="100%" height="100%" unselectable="on" /> | Granny | Easy | Windows | 10/11/21 | Boomer tech |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Horizontall.png?raw=true" width="100%" height="100%" unselectable="on" /> | Horizontall | Easy | Linux | 9/6/21 | A lot harder than other easy boxes |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Knife.png?raw=true" width="100%" height="100%" unselectable="on" /> | Knife | Easy | Linux | 8/28/21 | Kinda weird, didn't like it too much |
@@ -28,6 +29,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Nibbles.png?raw=true" width="100%" height="100%" unselectable="on" /> | Nibbles | Easy | Linux | 10/10/21 | Absolutely terrible |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Previse.png?raw=true" width="100%" height="100%" unselectable="on" /> | Previse | Easy | Linux | 9/12/21 | Sort of difficult but rewarding |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Optimum.png?raw=true" width="100%" height="100%" unselectable="on" /> | Optimum | Easy | Windows | 10/10/21 | Not too easy or difficult |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Shense.png?raw=true" width="100%" height="100%" unselectable="on" /> | Sense | Easy | Linux | 10/13/21 | Watch your wordlists |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Shocker.png?raw=true" width="100%" height="100%" unselectable="on" /> | Shocker | Easy | Linux | 10/6/21 | Slight enumeration |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bastard_Small.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bastard | Medium | Windows | 10/10/21 | Many exploits to sift through, but that's about it |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bolt.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bolt | Medium | Linux | 9/27/21 | Very difficult but enjoyable |
