@@ -37,5 +37,6 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Forge.png?raw=true" width="100%" height="100%" unselectable="on" /> | Forge | Medium | Linux | 9/11/2021 | User was hard but super fun, root was too easy |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Nineveh.png?raw=true" width="100%" height="100%" unselectable="on" /> | Nineveh | Medium | Linux | 10/13/2021 | Just don't do this box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Seal.png?raw=true" width="100%" height="100%" unselectable="on" /> | Seal | Medium | Linux | 9/15/2021 | A decent box, root wasn't challenging |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Silo.png?raw=true" width="100%" height="100%" unselectable="on" /> | Silo | Medium | Windows | 10/14/2021 | This one's fun |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Monitors.png?raw=true" width="100%" height="100%" unselectable="on" /> | Monitors | Hard | Linux | 9/23/2021 | Solid box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Brainfuck.png?raw=true" width="100%" height="100%" unselectable="on" /> | Brainfuck | Insane | Linux | 10/1/2021 | Does not live up to its difficulty |
