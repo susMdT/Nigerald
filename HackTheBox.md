@@ -14,6 +14,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bashed.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bashed | Easy | Linux | 10/7/21 | Simple stuff, easier with a special tool |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Beep.png?raw=true" width="100%" height="100%" unselectable="on" /> | Beep | Easy | Linux | 10/10/21 | Don't overthink it (Shocking) |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Blue.png?raw=true" width="100%" height="100%" unselectable="on" /> | Blue | Easy | Windows | 10/6/21 | It's in the name |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bounty.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bounty | Easy | Windows | 10/15/21 | IIS is a bruh moment |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/BountyHunter.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bounty Hunter | Easy | Linux | 8/30/21 | A little difficult, but very fun |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Cap.png?raw=true" width="100%" height="100%" unselectable="on" /> | Cap | Easy | Linux | 8/03/21 | Very easy and good introductory box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Devel.png?raw=true" width="100%" height="100%" unselectable="on" /> | Devel | Easy | Windows | 10/6/21 | Simple with an interesting approach |
