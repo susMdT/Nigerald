@@ -30,7 +30,7 @@ The infrastructure for the CTF was held on vSphere, a cloud computer virtualizat
 Each level had four flags (except the last level) that were awarded for successfully completing a stage of a penetration test on the current machine the player was on. These flags were: Reconnaissance, Exploitation, Privilege Escalation, Lateral Movement.
   
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CTF_Challenges.PNG?raw=true" width="100%" height="100%" unselectable="on" />
-<p align="center"> <em> The challeneges </em> </>
+<p align="center" <em> The challeneges </em> />
 
 Level 1: Linux
 
