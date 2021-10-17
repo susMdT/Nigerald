@@ -32,26 +32,24 @@ Each level had four flags (except the last level) that were awarded for successf
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CTF_Challenges.PNG?raw=true" width="100%" height="100%" unselectable="on" />
 <p class="subtitle"> The challenges </p>
 
-Level 1: Linux
 
-| Reconnaissance       | An nmap scan would reveal that the machine was running vsftpd 2.3.4, and anonymous ftp was enabled |
+| Level 1:              | Linux |
 | -------------------- | ------------------------------------------------------------ |
+| Reconnaissance       | An nmap scan would reveal that the machine was running vsftpd 2.3.4, and anonymous ftp was enabled |
 | Exploitation         | Using metasploit or using exploit 49757 on Exploit-DB, the player would gain a foothold through exploiting vsftpd 2.3.4 to gain a bind shell |
 | Privilege Escalation | Reading /etc/crontabs would show that an automated task was running a script as root, and that by checking the permissions on the script, the player would find that they could modify it to run any command on root. |
 | Lateral Movement     | Now as root, if the player enumerated further, they would find credentials for an MsSql user along with the lateral movement flag. |
 
-Level 2: Windows
-
-| Reconaissance        | An nmap scan would reveal a MsSql server open along with an SMB server. Enumerating further, the player would find out that the guest account was enabled in SMB and that they could find the recon flag in one of the shares, along with a note that leaves a hint about xp_cmdshell being an attack vector since the creds found in the previous box could be used to access a sysadmin account. |
+| Level 2:             | Windows |
 | -------------------- | ------------------------------------------------------------ |
+| Reconaissance        | An nmap scan would reveal a MsSql server open along with an SMB server. Enumerating further, the player would find out that the guest account was enabled in SMB and that they could find the recon flag in one of the shares, along with a note that leaves a hint about xp_cmdshell being an attack vector since the creds found in the previous box could be used to access a sysadmin account. |
 | Exploitation         | Using the information from recon, the player could use Metasploit (exploit/windows/mssql/mssql_payload) along with the MsSql creds to gain a reverse shell |
 | Privilege Escalation | The flag hint on the CTFd website mentioned the service "Development_Test" having an unquoted service path vulnerability. Creating a payload in msfvenom, placing it in root directory as "New.exe" and then starting the service would give the user a reverse shell as System. |
 | Lateral Movement     | The player had to upload Mimikatz from their Kali machine and dump hashes with it to gain the last flag. The password hashes weren't meant to be cracked nor were they used to authenticate to the third machine |
 
-Level 3: Linux
-
-| Reconnaissance         | An nmap scan would reveal that the machine was running an apache web server, and curling it would show the credentials to the manager in the documentation. |
+| Level 3:               | Linux |
 | ---------------------- | ------------------------------------------------------------ |
+| Reconnaissance         | An nmap scan would reveal that the machine was running an apache web server, and curling it would show the credentials to the manager in the documentation. |
 | Exploitation           | The player could manually craft a POST request through curl to upload a reverse shell through the manager page, or use Metasploit (exploit/multi/http/tomcat_mgr_upload) to do this for them. If the player sent a POST request through curl, they would then have to access the location of the upload to active the shell. |
 | Privilege Escalation   | After enumerating the machine, the player would notice that there was an executable script that they could run as another user, and that this file had a path injection vulnerability. By modifying their path variable and creating a malicious file to be executed, the player would gain access to a more privileged user. |
 | Privilege Escalation 2 | The new user was in the lxd group, and by uploading an image, initializing it with privileges, and mounting it on the root file system, the player would gain root. |
@@ -69,5 +67,3 @@ The second challenge was an unexpected one that came from running a multiple pla
 
 This was a very stressful and fun experience. The team and I placed a lot of effort into this event, and we had a very short time to do so (just about two days). There were very few hours of sleep made in that second half of the week. However, the event had a much larger turnout that usual workshops, and I had a great time guiding people through the boxes. Some people even stayed very late after hours to try to get as many flags as possible, and it was very satisfying seeing that amount of passion coming from people who were just as new as I was to all this stuff three months ago. I want to thank Jacob and Taylor for figuring out the networking magic so that the infrastructure was actually functional, and to Brice for saving our Windows box. I also want to thank everyone else who spent countless hours on these machines to make the event a success. Thanks Robinson, Luis, Alex, and Justin for all the help. It was really cool to be a part of all of this.
 
-| bruh | bruh2 |
-| bruh | bruh |
