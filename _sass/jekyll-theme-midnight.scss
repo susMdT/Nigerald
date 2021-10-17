@@ -76,7 +76,7 @@ strong {
 }
 
 .wrapper { /*align this value with section to modify width of each page */
-  max-width:900px;
+  max-width:75%;
   margin:0 auto;
   position:relative;
   padding: 0 20px;
@@ -166,7 +166,7 @@ dt {
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
 
   nav {
-    max-width: 800px; /* width of the top menu bar thing */
+    max-width: 75%; /* width of the top menu bar thing */
     margin: 0 auto;
     padding: 0 10px;
     background: blue;
@@ -231,7 +231,7 @@ dt {
 }
 
 section {
-  max-width:800px; /* align this value with wrapper to increase width of each page */
+  max-width:75%; /* align this value with wrapper to increase width of each page */
   padding: 30px 0px 50px 0px;
   margin: 0 auto;
   margin-top: 70px;
