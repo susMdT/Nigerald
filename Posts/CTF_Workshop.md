@@ -60,7 +60,7 @@ There were two main challenges that I faced personally when contributing to this
 
 The second challenge was an unexpected one that came from running a multiple player environment. Since the CTF was essentially set up as four machines to be shared by four people, we ran into some issues. Most notably, in the first level, the bind shell created by the vsftpd 2.3.4 exploit set up a listener on the victim on port 6200. Since a port can't be used by multiple services or processes, only one person was able to exploit the first box at a time. A player would have to wait for another person to completely root it before being able to exploit the box. Every time someone finished rooting the box, I had to remember to kill the bind shell process since it didn't go away even after they killed their shell, which was weird. 
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CTF_IR.PNG?raw=true" width="100%" height="100%" unselectable="on" />
-<p class="sbutitle"> Me attempting to perform "IR"</p>
+<p class="subtitle"> Me attempting to perform "IR" </p>
 
 
 ## Final  Thoughts
