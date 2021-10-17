@@ -1,7 +1,6 @@
 ---
-title: My First Swift Workshop: Creating a CTF
+title: My First Swift Workshop
 layout: default
-
 ---
 
 # My First Swift Workshop: Creating a CTF
