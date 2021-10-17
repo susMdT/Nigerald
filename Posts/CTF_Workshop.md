@@ -1,6 +1,7 @@
 ---
 title: My First Swift Workshop
 layout: default
+classes: wide
 ---
 
 # My First Swift Workshop: Creating a CTF
