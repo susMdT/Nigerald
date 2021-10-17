@@ -42,7 +42,7 @@ Level 1: Linux
 
 Level 2: Windows
 
-| Reconnaissance       | An nmap scan would reveal a MsSql server open along with an SMB server. Enumerating further, the player would find out that the guest account was enabled in SMB and that they could find the recon flag in one of the shares, along with a note that leaves a hint about xp_cmdshell being an attack vector since the creds found in the previous box could be used to access a sysadmin account. |
+| Reconaissance        | An nmap scan would reveal a MsSql server open along with an SMB server. Enumerating further, the player would find out that the guest account was enabled in SMB and that they could find the recon flag in one of the shares, along with a note that leaves a hint about xp_cmdshell being an attack vector since the creds found in the previous box could be used to access a sysadmin account. |
 | -------------------- | ------------------------------------------------------------ |
 | Exploitation         | Using the information from recon, the player could use Metasploit (exploit/windows/mssql/mssql_payload) along with the MsSql creds to gain a reverse shell |
 | Privilege Escalation | The flag hint on the CTFd website mentioned the service "Development_Test" having an unquoted service path vulnerability. Creating a payload in msfvenom, placing it in root directory as "New.exe" and then starting the service would give the user a reverse shell as System. |
