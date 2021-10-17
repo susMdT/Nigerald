@@ -68,3 +68,6 @@ The second challenge was an unexpected one that came from running a multiple pla
 ## Final  Thoughts
 
 This was a very stressful and fun experience. The team and I placed a lot of effort into this event, and we had a very short time to do so (just about two days). There were very few hours of sleep made in that second half of the week. However, the event had a much larger turnout that usual workshops, and I had a great time guiding people through the boxes. Some people even stayed very late after hours to try to get as many flags as possible, and it was very satisfying seeing that amount of passion coming from people who were just as new as I was to all this stuff three months ago. I want to thank Jacob and Taylor for figuring out the networking magic so that the infrastructure was actually functional, and to Brice for saving our Windows box. I also want to thank everyone else who spent countless hours on these machines to make the event a success. Thanks Robinson, Luis, Alex, and Justin for all the help. It was really cool to be a part of all of this.
+
+| bruh | bruh2 |
+| bruh | bruh |
