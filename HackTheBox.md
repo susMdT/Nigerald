@@ -33,6 +33,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Optimum.png?raw=true" width="100%" height="100%" unselectable="on" /> | Optimum | Easy | Windows | 10/10/21 | Not too easy or difficult |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Sense.png?raw=true" width="100%" height="100%" unselectable="on" /> | Sense | Easy | FreeBSD | 10/13/21 | Watch your wordlists |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Shocker.png?raw=true" width="100%" height="100%" unselectable="on" /> | Shocker | Easy | Linux | 10/6/21 | Slight enumeration |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Valentine.png?raw=true" width="100%" height="100%" unselectable="on" /> | Valentine | Easy | Linux | 10/19/21 | Know your vulns |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bastard_Small.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bastard | Medium | Windows | 10/10/21 | Many exploits to sift through, but that's about it |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bolt.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bolt | Medium | Linux | 9/27/21 | Very difficult but enjoyable |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Cronos.png?raw=true" width="100%" height="100%" unselectable="on" /> | Cronos | Medium | Linux | 10/11/21 | A rough start, but name gives it away |
