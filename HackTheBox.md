@@ -47,4 +47,5 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Breadcrumbs.png?raw=true" width="100%" height="100%" unselectable="on" /> | Breadcrumbs | Hard | Windows | 10/24/2021 | Lots of enumerating |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Joker.png?raw=true" width="100%" height="100%" unselectable="on" /> | Joker | Hard | Linux | 10/25/2021 | The real joke is how many times I had to reset this box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Monitors.png?raw=true" width="100%" height="100%" unselectable="on" /> | Monitors | Hard | Linux | 9/23/2021 | Solid box |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Registry.png?raw=true" width="100%" height="100%" unselectable="on" /> | Registry | Hard | Linux | 10/26/2021 | Solid box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Brainfuck.png?raw=true" width="100%" height="100%" unselectable="on" /> | Brainfuck | Insane | Linux | 10/1/2021 | Does not live up to its difficulty |
