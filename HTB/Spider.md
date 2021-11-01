@@ -4,7 +4,7 @@ permalink: /HTB/Spider
 layout: default
 ---
 {% raw %}
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_Big.png?raw=true" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_Big.png?raw=true) 
 Spider is a hard level box on HackTheBox and heavily focuses on web exploits, hence the name. As with all hard boxes on HackTheBox, it requires a multi-step process and it is recommended that you have experience with web exploits or knowledge of the OWASP Top 10 prior to attempting this box. 
 
 # Walkthrough
@@ -25,11 +25,11 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
 Adding the line `10.10.10.243 spider.htb` to our `/etc/hosts` allows us to access the website being hosted through entering `http://spider.htb` in the url. The website appears to be a chair store. 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_1.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_1.png?raw=true) 
 
 Scanning for directories and subdomains with Gobuster doesn't reveal much. When we register and login, I notice that there's a 10 character limit, we are given a UUID to login with rather than a username, and that our username is reflected back to us after we login with the UUID and password combination. Based on this, there's some sort of database that is associating a UUID to a password and username. Since the login is determined by a UUID being checked by a database, we can't just SQL inject to bypass a login since we need an admin UUID first. So our other option is to work with how our username gets reflected back to us. We can't even try to run PHP code through our username because of the character limit, so let's try some SSTI (Server Side Template Injection). This is essentially placing bad inputs into the template engine that the web server is running to get it to do stuff for us, which can range from just gathering info to RCE. We can test for the backend being Jinja2 through registering our username as `{{7 * 7}}` and then checking the `User Information` tab on the left.
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_2.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_2.png?raw=true) 
 
 Alright, the website is vulnerable to Jinja2 based SSTI. However, with a 10 character limit, we can't achieve RCE. Since this website has a Jinja2 template, it can either be running Flask or Django which are python based web frameworks. With Flask we can input `{{config}}` as our username to essentially set our username to be a call to the configuration object. And testing this works! We get the following information. 
 
@@ -47,7 +47,7 @@ Alright, the website is vulnerable to Jinja2 based SSTI. However, with a 10 char
 
 What should catch our eye is the `SECRET_KEY` key in the dictionary, with a value of `Sup3rUnpredictableK3yPleas3Leav3mdanfe12332942`. The way Flask signs session cookies is through a three part structure, separated by periods. 
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_3.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_3.png?raw=true) 
 
 The left side contains session data which is base64 encoded; this session data varies depending upon the website. The middle is self explanatory. The last part is determined through creating a Sha-1 hash of our session data, current timestamp, and the secret key. So now that we have the secret key, we can deconstruct our cookie for more information. We will use the `flask-unsign` tool for this which can be installed by `pip3 install flask-unsign`. We can then grab our session cookie (by viewing it through inspect elements) and use flask-unsign to decode it. Run the command `flask-unsign --decode -c '<cookie>' --secret 'Sup3rUnpredictableK3yPleas3Leav3mdanfe12332942'`This should return something along the lines of 
 
@@ -65,19 +65,19 @@ Remember how we thought that the website used a database to match our UUID with 
 
 Considering how this is the first and only hard-coded user, we should investigate this. Unfortunately we cannot SSH with those creds, but we do get to log into the user `chiv` on the website, who is actually an admin user! We can now further enumerate the website. We can access the `/main` page which has some interesting features.
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_4.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_4.png?raw=true) 
 
 We can send messages that end up going to `/view?check=messages`and we can view support tickets in `/view?check=support`. A quick peek into the messages shows that there is a link to `/a1836bb97e5f4ce6b3e8f25693c1a16c.unfinished.supportportal` which is where the support tickets come from. It appears that, based on the SQL dump from earlier, messages and support tickets are uploaded there which are pulled by the website, where the check variable matches the table from the database. I tried creating PHP code with the messages but it seems the angled brackets get filtered. SSTI doesn't work there either because curly brackets are also filtered. 
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_5.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_5.png?raw=true) 
 
 Onto the support ticket. The support message doesn't filter anything but doesn't do anything either but the title is different. It has a Web Application Firewall (WAF) which filters bad characters. This is probably our way in. Testing some bad characters, we get a list of what is being filtered. `periods, single quotes, the word if, double sets of curly brackets, and underscores` are being filtered. 
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_6.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_6.png?raw=true) 
 
 Also, PHP code doesn't work here, so SSTI is probably gonna be our attack vector. But without double curly brackets and all this WAF stuff, what do we do? Luckily, an article by the name of our user, <a href="https://hackmd.io/@Chivato/HyWsJ31dI">chiv</a>, along with <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection">PayloadAllTheThings</a>, actually helps a lot. We are going to use a payload based off this template `{% include %}`, which is a Jinja tag that is usually used to include some content into the current page. However, we can manipulate it to get RCE. We are going to combine our payload template with this one: `{{request.application.__globals__.__builtins__.__import__('os').system('<some command>')}}` to get something like `{% include request.application.__globals__.__builtins__.__import__('os').system('<some command>'%}` . Combining the two together and working around the WAF, our final payload looks like this: `{% include request["application"]["\x5f\x5fglobals\x5f\x5f"]["\x5f\x5fbuiltins\x5f\x5f"]["\x5f\x5fimport\x5f\x5f"]("os")["system"]("someCommandHere") %}`. Disgusting. But it works. And there's a reason for this. What the second payload is doing is calling on the request class, then it calls its global attributes, then from its global attributes it calls for the builtins attributes, then it imports one of the builtins (the module os which is used for terminal commands), and from there we can execute commands. However, now we need to make this payload bypass the filter. To do this we are going to first hex encode all of our single quotes, since python can automatically convert hex encoded strings back to normal text with the `\x` prefix. So we are replacing all of our `_` with `\x5f`. To bypass the `.`, we can treat each object as an array of properties and use brackets. This can be done like this: `firstClass["__SomeProperty__"]["__SomePropertyOfSomeProperty__"]("MethodArgument__ForSomePropertyOfSomeProperty__") `Once we use both of those bypass techniques, we get that final ugly payload. Here is a picture to better visualize the process
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_7.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_7.png?raw=true) 
 
 
 
@@ -183,7 +183,7 @@ chiv       2440  0.0  0.0  13144  1108 pts/0    S+   20:51   0:00 grep --color=a
 
 Since the website is locally hosted, let's sign out of our SSH session and restart it but this time forwarding the port to our host. The command `ssh -L 80:127.0.0.1:8080 chiv@spider.htb -i key`will do this to us. What this is doing is that we open our `port 80` on `127.0.0.1` (localhost) to send and receive traffic from `spider.htb` on their `port 8080`, since the website is being locally hosted on chiv's machine on port 8080. With this, we can now access it through our browser via inputting `http://127.0.0.1:80` in our url. It appears to be another login page without authentication, and another furniture store. This seems pretty bare once again
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_8.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_8.png?raw=true) 
 
 Even analyzing the request in Burp doesn't return much. However, the version number seems a bit random and therefore suspicious.
 
@@ -303,7 +303,7 @@ username=%26a%3b&version=1.0.0+-->+<!DOCTYPE+root+[<!ENTITY+a+SYSTEM+'file%3a///
 
 Doing this gets us this beautiful mess
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_9.png?raw=true" width="100%" height="100%" unselectable="on" class="Box_Logo" />
+![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_9.png?raw=true) 
 
 From here either get the key via Burp's HTTP history or use `inspect elements` by right clicking the page to find the whole text of the key. From here repeat the process of copying the text into a file, changing the file permissions, and then SSHing into root. Spider has been pwned.
 
