@@ -8,7 +8,7 @@ Spider is a hard level box on HackTheBox and heavily focuses on web exploits, he
 
 # Walkthrough
 
-A full nmap scan [`nmap -p- 10.10.10.243`] reveals that only ports 22 and 80 are open, with the services being SSH and HTTP, respectively. A detailed scan of these two doesn't add too much.
+A full nmap scan `nmap -p- 10.10.10.243` reveals that only ports 22 and 80 are open, with the services being SSH and HTTP, respectively. A detailed scan of these two doesn't add too much.
 
 ```
 PORT   STATE SERVICE VERSION
