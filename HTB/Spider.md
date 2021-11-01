@@ -3,6 +3,7 @@ title: Hack The Box&#58; Spider
 permalink: /HTB/Spider
 layout: default
 ---
+{% raw %}
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_Big.png?raw=true" unselectable="on" class="Box_Logo" />
 Spider is a hard level box on HackTheBox and heavily focuses on web exploits, hence the name. As with all hard boxes on HackTheBox, it requires a multi-step process and it is recommended that you have experience with web exploits or knowledge of the OWASP Top 10 prior to attempting this box. 
 
@@ -311,3 +312,4 @@ From here either get the key via Burp's HTTP history or use `inspect elements` b
 I think I was a little rusty with my webapps because this box was insanely difficult for me and I had to get a lot of outside assistance, and in hindsight, this box wasn't extremely difficult. However, it's refreshing to do these kinds of exploits again rather than service exploits via ExploitDB or learning how to exploit one service in particular. This box is definitely challenging but you learn a lot. 
 
 --Dylan Tran 11/1/21
+{% endraw %}
