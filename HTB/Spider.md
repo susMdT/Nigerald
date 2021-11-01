@@ -69,7 +69,7 @@ Considering how this is the first and only hard-coded user, we should investigat
 
 We can send messages that end up going to `/view?check=messages`and we can view support tickets in `/view?check=support`. A quick peek into the messages shows that there is a link to `/a1836bb97e5f4ce6b3e8f25693c1a16c.unfinished.supportportal` which is where the support tickets come from. It appears that, based on the SQL dump from earlier, messages and support tickets are uploaded there which are pulled by the website, where the check variable matches the table from the database. I tried creating PHP code with the messages but it seems the angled brackets get filtered. SSTI doesn't work there either because curly brackets are also filtered. 
 
-![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_5.png?raw=true) 
+<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Arctic.png?raw=true" class="postImagecontent" width="100%" height="100%" unselectable="on" />
 
 Onto the support ticket. The support message doesn't filter anything but doesn't do anything either but the title is different. It has a Web Application Firewall (WAF) which filters bad characters. This is probably our way in. Testing some bad characters, we get a list of what is being filtered. `periods, single quotes, the word if, double sets of curly brackets, and underscores` are being filtered. 
 
