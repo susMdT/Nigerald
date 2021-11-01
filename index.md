@@ -11,4 +11,4 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 Nothing yet, but hopefully soon! 
 
 ## Socials
-<a href=https://www.linkedin.com/in/dylan-tran-84aa46217/> Linkedin </a>
+<a href="https://www.linkedin.com/in/dylan-tran-84aa46217"/> Linkedin </a>
