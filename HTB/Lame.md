@@ -5,7 +5,7 @@ layout: default
 ---
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Lame_Big.png?raw=true" unselectable="on" class="Box_Logo" />
 
-Lame is an easy level box on HackTheBox and covers many basics. There are multiple approaches for this box and overall it was pretty fun.
+Lame is an easy level box on HackTheBox and covers many basics. There are multiple approaches for this box and overall it was pretty fun. My approach was to exploit the `distccd` service to gain a foothold, and then using `rlogin` to gain root, as it required no password.
 
 # Walkthrough
 Start off by performing a complete, general nmap scan `nmap -p-`
