@@ -45,7 +45,7 @@ Alright, the website is vulnerable to Jinja2 based SSTI. However, with a 10 char
 'RATELIMIT_HEADER_RETRY_AFTER': 'Retry-After', 'UPLOAD_FOLDER': 'static/uploads'}>
 ```
 
-What should catch our eye is the `SECRET_KEY` key in the dictionary, with a value of `Sup3rUnpredictableK3yPleas3``Leav3mdanfe12332942`. The way Flask signs session cookies is through a three part structure, separated by periods. 
+What should catch our eye is the `SECRET_KEY` key in the dictionary, with a value of `Sup3rUnpredictableK3y``Pleas3Leav3mdanfe12332942`. The way Flask signs session cookies is through a three part structure, separated by periods. 
 
 ![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_3.png?raw=true) 
 
