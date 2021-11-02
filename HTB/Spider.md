@@ -49,7 +49,9 @@ What should catch our eye is the `SECRET_KEY` key in the dictionary, with a valu
 
 ![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_3.png?raw=true) 
 
-The left side contains session data which is base64 encoded; this session data varies depending upon the website. The middle is self explanatory. The last part is determined through creating a Sha-1 hash of our session data, current timestamp, and the secret key. So now that we have the secret key, we can deconstruct our cookie for more information. We will use the `flask-unsign` tool for this which can be installed by `pip3 install flask-unsign`. We can then grab our session cookie (by viewing it through inspect elements) and use flask-unsign to decode it. Run the command `flask-unsign --decode -c '<cookie>' --secret 'Sup3rUnpredictableK3yPleas3Leav3mdanfe12332942'`This should return something along the lines of 
+The left side contains session data which is base64 encoded; this session data varies depending upon the website. The middle is self explanatory. The last part is determined through creating a Sha-1 hash of our session data, current timestamp, and the secret key. So now that we have the secret key, we can deconstruct our cookie for more information. We will use the `flask-unsign` tool for this which can be installed by `pip3 install flask-unsign`. We can then grab our session cookie (by viewing it through inspect elements) and use flask-unsign to decode it. Run the command 
+`flask-unsign --decode -c '<cookie>' --secret 'Sup3rUnpredictableK3yPleas3Leav3mdanfe12332942'`
+This should return something along the lines of 
 
 ````
 flask-unsign --decode -c '<cookie>' --secret 'Sup3rUnpredictableK3yPleas3Leav3mdanfe12332942'
