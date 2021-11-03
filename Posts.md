@@ -2,6 +2,7 @@
 title: Posts
 description: A listing of all my personal posts
 layout: default
+permalink: /Posts
 ---
 ## <a href="https://susmdt.github.io/Posts/CTF_Workshop"> My First Swift Workshop: Creating a CTF </a>
 #### 10/16/2021 
