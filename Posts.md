@@ -4,7 +4,7 @@ description: A listing of all my personal posts
 layout: default
 permalink: /Posts
 ---
-## <a href="https://dtsec.us/CTF_Workshop"> My First Swift Workshop: Creating a CTF </a>
+## <a href="https://dtsec.us/Posts/CTF_Workshop"> My First Swift Workshop: Creating a CTF </a>
 #### 10/16/2021 
 My first attempt at helping out with a Swift workshop.
 <br/>
