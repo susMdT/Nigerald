@@ -2,6 +2,7 @@
 title: Hack The Box&#58; Spider
 permalink: /HTB/Spider
 layout: default
+classes: wide
 ---
 {% raw %}
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_Big.png?raw=true" class="postImagecontent" unselectable="on" />
