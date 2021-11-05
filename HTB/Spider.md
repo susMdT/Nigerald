@@ -30,7 +30,7 @@ Adding the line `10.10.10.243 spider.htb` to our `/etc/hosts` allows us to acces
 
 Scanning for directories and subdomains with Gobuster doesn't reveal much. When we register and login, I notice that there's a 10 character limit, we are given a UUID to login with rather than a username, and that our username is reflected back to us after we login with the UUID and password combination. Based on this, there's some sort of database that is associating a UUID to a password and username. Since the login is determined by a UUID being checked by a database, we can't just SQL inject to bypass a login since we need an admin UUID first. So our other option is to work with how our username gets reflected back to us. We can't even try to run PHP code through our username because of the character limit, so let's try some SSTI (Server Side Template Injection). This is essentially placing bad inputs into the template engine that the web server is running to get it to do stuff for us, which can range from just gathering info to RCE. We can test for the backend being Jinja2 through registering our username as `{{7 * 7}}` and then checking the `User Information` tab on the left.
 
-![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_2.png?raw=true) 
+<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_2.png?raw=true" class="postImagecontent" width="100%" height="100%" unselectable="on" />
 
 Alright, the website is vulnerable to Jinja2 based SSTI. However, with a 10 character limit, we can't achieve RCE. Since this website has a Jinja2 template, it can either be running Flask or Django which are python based web frameworks. With Flask we can input `{{config}}` as our username to essentially set our username to be a call to the configuration object. And testing this works! We get the following information. 
 
@@ -87,7 +87,7 @@ We can send messages that end up going to `/view?check=messages`and we can view 
 
 Onto the support ticket. The support message doesn't filter anything but doesn't do anything either but the title is different. It has a Web Application Firewall (WAF) which filters bad characters. This is probably our way in. Testing some bad characters, we get a list of what is being filtered. `periods, single quotes, the word if, double sets of curly brackets, and underscores` are being filtered. 
 
-![Image](https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_6.png?raw=true) 
+<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_6.png?raw=true" class="postImagecontent" width="100%" height="100%" unselectable="on" />
 
 Also, PHP code doesn't work here, so SSTI is probably gonna be our attack vector. But without double curly brackets and all this WAF stuff, what do we do? Luckily, an article by the name of our user, <a href="https://hackmd.io/@Chivato/HyWsJ31dI">chiv</a>, along with <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection">PayloadAllTheThings</a>, actually helps a lot. We are going to use a payload based off this template `{% include %}`, which is a Jinja tag that is usually used to include some content into the current page. However, we can manipulate it to get RCE. We are going to combine our payload template with this one: 
 ```
