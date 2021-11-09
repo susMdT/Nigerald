@@ -5,7 +5,7 @@ layout: default
 classes: wide
 ---
 {% raw %}
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_Big.png?raw=true" class="postImagecontent" unselectable="on" />
+<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Spider_Big.png?raw=true" class="Box_Logo" unselectable="on" />
 Spider is a hard level box on HackTheBox and heavily focuses on web exploits, hence the name. As with all hard boxes on HackTheBox, it requires a multi-step process and it is recommended that you have experience with web exploits or knowledge of the OWASP Top 10 prior to attempting this box. 
 
 # Walkthrough
