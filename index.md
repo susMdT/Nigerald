@@ -30,7 +30,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
   <div style='float:left'>
     <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="50%" height="50%" unselectable="on" />
   </div>
-  <div style="float:left">
+  <div style="float:right">
     <table>
       <tr>
         <th colspan="3">Collegiate Penetration Testing Competition</th>    
