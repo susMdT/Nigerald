@@ -19,7 +19,7 @@ function show() {
   }
 }
 </script>
-hover:hover {
+#hovere:hover {
 color: linear-gradient(#93bd20, #659e10);
 }
 </head>
@@ -27,7 +27,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <br/>
 <br/>
 
-<div onClick="show()" id="hover"><h2>Achievements</h2></div>
+<div onClick="show()"><h2 id="hovere">Achievements</h2></div>
 <br/>
 <div id="achievements" style="display:none">
 
