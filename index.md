@@ -7,7 +7,7 @@ permalink: /
 <head>
 <style> /*center text, make 3 columns of equal width, remove the white border this theme has by default*/
 th {text-align: center; border-bottom: 0px;}
-td {text-align: center; width: 33%; border-bottom: 0px;}
+td {text-align: center; border-bottom: 0px;}
 </style>
 <script>
 function show() {
@@ -36,9 +36,9 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
         <th colspan="3">Collegiate Penetration Testing Competition</th>    
       </tr>
       <tr>
-        <td>Western Regionals</td>
-        <td>1st Place</td>
-        <td>2021</td>
+        <td style="width: 40%">Western Regionals</td>
+        <td style="width: 33%">1st Place</td>
+        <td style="width: 33%">2021</td>
       </tr>
     </table>
   </div>
