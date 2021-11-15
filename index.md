@@ -11,7 +11,7 @@ td {text-align: center; width: 33%; border-bottom: 0px;}
 </style>
 <script>
 function show() {
-  var x = document.getElementById("achievments");
+  var x = document.getElementById("achievements");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -27,9 +27,9 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <br/>
 <br/>
 
-<div onClick="show()" id="hover"><h2>Achievments</h2></div>
+<div onClick="show()" id="hover"><h2>Achievements</h2></div>
 <br/>
-<div id="achievments" style="display:none">
+<div id="achievements" style="display:none">
 
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
 <table>
