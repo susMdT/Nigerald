@@ -18,11 +18,15 @@ function show() {
   }
 }
 </script>
+"hover":hover {
+color: green;
+}
 Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pomona majoring in Computer Science. I like pentesting and am studying cybersecurity related stuff. I'm involved with the SWIFT Club on campus (Students with an Interest in the Future of Technology). I'm also involved as a participant for the Collegiate Cyber Defense Competition and Collegiate Penetration Testing Competition teams for Cal Poly Pomona. I started my journey in cybersecurity around the beginning of July in 2021. 
 <br/>
 <br/>
 
-<div onClick="show()"><h2>Achievments</h2></div>
+<div onClick="show()" id="hover"><h2>Achievments</h2></div>
+<br/>
 <div id="achievments" style="display:none">
 
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
