@@ -13,7 +13,6 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <br/>
 
 ## Accomplishments
-Nothing yet, but hopefully soon!
 <table>
   <tr>
     <th></th>
