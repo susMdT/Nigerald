@@ -42,11 +42,11 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
           <td style="width: 33%">2021</td>
         </tr>
       </table>
-      <div id="indexFloat">
-        <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Hivestorm_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
-      </div>
+  </div>
+  <div id="sideGrouper">
+    <div id="indexFloat">
+      <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Hivestorm_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
     </div>
-    <div id="sideGrouper">
     <div id="indexFloat">
       <table>
         <tr>
@@ -58,7 +58,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
         </tr>
       </table>
     </div>
-    </div>
+  </div>
 </div>
 ## Socials
 <a href="https://www.linkedin.com/in/dylan-tran-84aa46217"> Linkedin </a>
