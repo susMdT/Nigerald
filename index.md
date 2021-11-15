@@ -28,7 +28,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <br/>
 <div id="achievements" style="display:none">
   <div style='float:left'>
-    <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
+    <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="50%" height="50%" unselectable="on" />
   </div>
   <table>
     <tr>
