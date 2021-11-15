@@ -8,7 +8,7 @@ permalink: /
 th {text-align: center; border-bottom: 0px;}
 td {text-align: center; width: 33%; border-bottom: 0px;}
 </style>
-function myFunction() {
+function show() {
   var x = document.getElementById("achievments");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -20,7 +20,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <br/>
 <br/>
 
-<button onclick="myFunction()"><h2>View Achievments</h2></button>
+<div onClick="show()"> Achievments </div>
 <div id="achievments">
 
 <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
