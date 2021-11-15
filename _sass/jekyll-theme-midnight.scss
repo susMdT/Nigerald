@@ -338,6 +338,7 @@ color: #93bd20;
 #achievements::after{ /*some weird side by side image home page shit */
   content: "";
   clear: both;
+  display: block;
 }
 
 #indexFloat {
