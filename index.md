@@ -27,34 +27,38 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <div onClick="show()" id="hovere"><h2>Achievements</h2></div>
 <br/>
 <div id="achievements" style="display:none">
-  <div id="indexFloat">
-    <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
-  </div>
-  <div id="indexFloat">
-    <table>
-      <tr>
-        <th colspan="3">Collegiate Penetration Testing Competition</th>    
-      </tr>
-      <tr>
-        <td style="width: 40%">Western Regionals</td>
-        <td style="width: 33%">1st Place</td>
-        <td style="width: 33%">2021</td>
-      </tr>
-    </table>
+  <div id="sideGrouper">
     <div id="indexFloat">
-      <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Hivestorm_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
+      <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
     </div>
-  <div id="indexFloat">
-    <table>
-      <tr>
-        <th colspan="3">Hivestorm</th>    
-      </tr>
-      <tr>
-        <td style="width: 50%">5th Place</td>
-        <td style="width: 50%">2021</td>
-      </tr>
-    </table>
-  </div>
+    <div id="indexFloat">
+      <table>
+        <tr>
+          <th colspan="3">Collegiate Penetration Testing Competition</th>    
+        </tr>
+        <tr>
+          <td style="width: 40%">Western Regionals</td>
+          <td style="width: 33%">1st Place</td>
+          <td style="width: 33%">2021</td>
+        </tr>
+      </table>
+      <div id="indexFloat">
+        <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Hivestorm_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
+      </div>
+    </div>
+    <div id="sideGrouper">
+    <div id="indexFloat">
+      <table>
+        <tr>
+          <th colspan="3">Hivestorm</th>    
+        </tr>
+        <tr>
+          <td style="width: 50%">5th Place</td>
+          <td style="width: 50%">2021</td>
+        </tr>
+      </table>
+    </div>
+    </div>
 </div>
 ## Socials
 <a href="https://www.linkedin.com/in/dylan-tran-84aa46217"> Linkedin </a>
