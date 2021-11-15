@@ -9,7 +9,18 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <br/>
 
 ## Accomplishments
-Nothing yet, but hopefully soon! 
-
+Nothing yet, but hopefully soon!
+<table>
+  <tr>
+    <th></th>
+    <th>Collegiate Penetration Testing Competition</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Western Regionals</td>
+    <td>1st Place</td>
+    <td>2021</td>
+  </tr>
+</table>
 ## Socials
 <a href="https://www.linkedin.com/in/dylan-tran-84aa46217"> Linkedin </a>
