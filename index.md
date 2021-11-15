@@ -28,7 +28,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <br/>
 <br/>
 
-<div onClick="show()"><h2 id="hovere">Achievements</h2></div>
+<div onClick="show()" id="hovere"><h2>Achievements</h2></div>
 <br/>
 <div id="achievements" style="display:none">
 
