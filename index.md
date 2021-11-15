@@ -27,18 +27,19 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 <div onClick="show()" id="hovere"><h2>Achievements</h2></div>
 <br/>
 <div id="achievements" style="display:none">
-
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
-<table>
-  <tr>
-    <th colspan="3">Collegiate Penetration Testing Competition</th>    
-  </tr>
-  <tr>
-    <td>Western Regionals</td>
-    <td>1st Place</td>
-    <td>2021</td>
-  </tr>
-</table>
+  <div style='float:left'>
+    <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CPTC_Logo.png?raw=true" width="100%" height="100%" unselectable="on" />
+  </div>
+  <table>
+    <tr>
+      <th colspan="3">Collegiate Penetration Testing Competition</th>    
+    </tr>
+    <tr>
+      <td>Western Regionals</td>
+      <td>1st Place</td>
+      <td>2021</td>
+    </tr>
+  </table>
 </div>
 ## Socials
 <a href="https://www.linkedin.com/in/dylan-tran-84aa46217"> Linkedin </a>
