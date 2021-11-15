@@ -14,11 +14,11 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
 
 ## Accomplishments
 <table>
-  <tr></tr>
   <tr>
     <th>Collegiate Penetration Testing Competition</th>
   </tr>
-  <tr></tr>
+</table>
+<table>
   <tr>
     <td>Western Regionals</td>
     <td>1st Place</td>
