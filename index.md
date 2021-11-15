@@ -42,6 +42,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
           <td style="width: 33%">2021</td>
         </tr>
       </table>
+    </div>
   </div>
   <div id="sideGrouper">
     <div id="indexFloat">
