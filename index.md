@@ -8,7 +8,6 @@ permalink: /
 <style> /*center text, make 3 columns of equal width, remove the white border this theme has by default*/
 th {text-align: center; border-bottom: 0px;}
 td {text-align: center; width: 33%; border-bottom: 0px;}
-#hovere:hover {color: linear-gradient(#93bd20, #659e10);}
 </style>
 <script>
 function show() {
