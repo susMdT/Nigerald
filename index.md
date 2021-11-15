@@ -19,7 +19,7 @@ function show() {
   }
 }
 </script>
-"hover":hover {
+hover:hover {
 color: linear-gradient(#93bd20, #659e10);
 }
 </head>
