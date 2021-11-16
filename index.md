@@ -61,6 +61,6 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
     </div>
   </div>
 </div>
-<br/>
+<br style="margin: 10px;" />
 ## Socials
 <a href="https://www.linkedin.com/in/dylan-tran-84aa46217"> Linkedin </a>
