@@ -44,6 +44,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Nineveh.png?raw=true" width="100%" height="100%" unselectable="on" /> | Nineveh | Medium | Linux | 10/13/2021 | Just don't do this box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Node.png?raw=true" width="100%" height="100%" unselectable="on" /> | Node | Medium | Linux | 10/19/2021 | Slowly descending into madness |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Seal.png?raw=true" width="100%" height="100%" unselectable="on" /> | Seal | Medium | Linux | 9/15/2021 | A decent box, root wasn't challenging |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Shibboleth.png?raw=true" width="100%" height="100%" unselectable="on" /> | Shibboleth | Medium | Linux | 11/18/2021 | Nice overall, nothing new |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Silo.png?raw=true" width="100%" height="100%" unselectable="on" /> | Silo | Medium | Windows | 10/14/2021 | This one's fun |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/SolidState.png?raw=true" width="100%" height="100%" unselectable="on" /> | SolidState | Medium | Linux | 10/14/2021 | Don't overcomplicate it |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Breadcrumbs.png?raw=true" width="100%" height="100%" unselectable="on" /> | Breadcrumbs | Hard | Windows | 10/24/2021 | Lots of enumerating |
