@@ -76,8 +76,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
         </tr>
       </table>
     </div>
-  </div>
-  <div id="sideGrouper">  
+  </div> 
 </div>
 <p style="font-size: 7px;"></p>
 ## Socials
