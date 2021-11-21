@@ -62,7 +62,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
   </div>
   <div id="sideGrouper">
     <div id="indexFloat">
-      <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CCDC.png?raw=true" width="100%" height="100%" unselectable="on" />
+      <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CCDC.jpg?raw=true" width="100%" height="100%" unselectable="on" />
     </div>
     <div id="indexFloat">
       <table>
