@@ -60,6 +60,24 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
       </table>
     </div>
   </div>
+  <div id="sideGrouper">
+    <div id="indexFloat">
+      <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/CCDC.png?raw=true" width="100%" height="100%" unselectable="on" />
+    </div>
+    <div id="indexFloat">
+      <table>
+        <tr>
+          <th colspan="3"><h1 style="font-size:20px">Collegiate Penetration Testing Competition</h1></th>    
+        </tr>
+        <tr>
+          <td style="width: 40%">Western Regional Invitationals</td>
+          <td style="width: 33%">6th Place</td>
+          <td style="width: 33%">2021</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="sideGrouper">  
 </div>
 <p style="font-size: 7px;"></p>
 ## Socials
