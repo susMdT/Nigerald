@@ -67,7 +67,7 @@ Hello, my name is Dylan Tran and this is my blog. I'm a freshman at Cal Poly Pom
     <div id="indexFloat">
       <table>
         <tr>
-          <th colspan="3"><h1 style="font-size:20px">Collegiate Penetration Testing Competition</h1></th>    
+          <th colspan="3"><h1 style="font-size:20px">Collegiate Cyber Defense Competition</h1></th>    
         </tr>
         <tr>
           <td style="width: 40%">Western Regional Invitationals</td>
