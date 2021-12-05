@@ -191,7 +191,7 @@ INFO: Done in 00M 16S
 
 This will load up a lot of .jsons that we will upload to Bloodhound. After uploading them, I like to start with a prebuilt query of "Shortest Paths to High Value Targets". We can see that our initial assumption was correct; RESOLUTE is a domain controller. Looking further, there is a second user, "ryan". Viewing the "Transitive Object Control" under the "Outbound Control Rights" of this node shows the following graph:
 
-<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Resolute_Bloodhound.png?raw=true" class="Box_Logo" unselectable="on" />
+<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Resolute_Bloodhound.PNG?raw=true" class="Box_Logo" unselectable="on" />
 
 Ryan is actually apart of the Contractors group which is also apart of the DNSAdmins group. There are something interesting results that come from googling things related to the DNSAdmin and Privilege Escalation. Essentially, if the DNSAdmin has the capability to turn on and off the DNS service (which they don't be default, but it seems to be a common configuration), then they can inject a malicious dll into the DNS service that will be run once the service is restart. This seems like a plausible attack vector given our current information, but we need to get to ryan first to test this. Back onto melanie, some basic enumeration reveals some PowerShell command history left in the root directory.
 
