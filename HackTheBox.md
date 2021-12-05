@@ -11,6 +11,7 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 
 | Image | Box Name  | Difficulty | Platform | Date Rooted | Comments |
 | ------------- | ------------- | ------------- | ------------- |------------- |------------- |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Active.png?raw=true" width="100%" height="100%" unselectable="on" /> | Active | Easy | Windows | 12/3/21 | Simply AD stuff |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Arctic.png?raw=true" width="100%" height="100%" unselectable="on" /> | Arctic | Easy | Windows | 10/11/21 | The name implies how slow this box is |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Backdoor.png?raw=true" width="100%" height="100%" unselectable="on" /> | Backdoor | Easy | Linux | 11/21/21 | User is interesting |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Bashed.png?raw=true" width="100%" height="100%" unselectable="on" /> | Bashed | Easy | Linux | 10/7/21 | Simple stuff, easier with a special tool |
@@ -48,10 +49,12 @@ A list of my completed HackTheBox boxes. I will also have my writeups/walkthroug
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Nineveh.png?raw=true" width="100%" height="100%" unselectable="on" /> | Nineveh | Medium | Linux | 10/13/2021 | Just don't do this box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Node.png?raw=true" width="100%" height="100%" unselectable="on" /> | Node | Medium | Linux | 10/19/2021 | Slowly descending into madness |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Poison.png?raw=true" width="100%" height="100%" unselectable="on" /> | Poison | Medium | FreeBSD | 11/26/2021 | Nothing new |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Resolute.png?raw=true" width="100%" height="100%" unselectable="on" /> | Resolute | Medium | Windows | 12/5/2021 | Interesting AD approach |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Seal.png?raw=true" width="100%" height="100%" unselectable="on" /> | Seal | Medium | Linux | 9/15/2021 | A decent box, root wasn't challenging |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Shibboleth.png?raw=true" width="100%" height="100%" unselectable="on" /> | Shibboleth | Medium | Linux | 11/18/2021 | Nice overall, nothing new |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Silo.png?raw=true" width="100%" height="100%" unselectable="on" /> | Silo | Medium | Windows | 10/14/2021 | This one's fun |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/SolidState.png?raw=true" width="100%" height="100%" unselectable="on" /> | SolidState | Medium | Linux | 10/14/2021 | Don't overcomplicate it |
+| <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Tartarsauce.png?raw=true" width="100%" height="100%" unselectable="on" /> | Tartarsauce | Medium | Linux | 11/30/2021 | A good amount of enumeration for this one |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Breadcrumbs.png?raw=true" width="100%" height="100%" unselectable="on" /> | Breadcrumbs | Hard | Windows | 10/24/2021 | Lots of enumerating |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Joker.png?raw=true" width="100%" height="100%" unselectable="on" /> | Joker | Hard | Linux | 10/25/2021 | The real joke is how many times I had to reset this box |
 | <img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Monitors.png?raw=true" width="100%" height="100%" unselectable="on" /> | Monitors | Hard | Linux | 9/23/2021 | Solid box |
