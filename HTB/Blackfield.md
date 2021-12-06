@@ -1,3 +1,11 @@
+---
+title: Hack The Box&#58; Blackfield
+permalink: /HTB/Blackfield
+layout: default
+classes: wide
+---
+<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Blackfield_Big.png?raw=true" class="Box_Logo" unselectable="on" />
+
 Blackfield is a hard level box on HackTheBox and requires basic Active Directory knowledge and enumeration skills to solve. The user part was rather lengthy, but with the use of Bloodhound, the path to root becomes clear very early on.
 
 ## Walkthrough
@@ -129,7 +137,7 @@ INFO: Done in 00M 17S
 
 It turns out we're correct. Checking for information on the other users we found yields the following graphs
 
-<bloodhound graph>
+<img src="https://github.com/susMdT/Nigerald/blob/master/assets/images/Blackfield_Bloodhound.PNG?raw=true" class="postImagecontent" width="100%" height="100%" unselectable="on" />
 
 First thing to note is that our user, support, can change the password for the user audit2020. There is also another user, svc_backup, which is in the Backup Operators group. Members of this group usually have the SeBackupPivilege and SeRestorePrivilege, allowing them to read any files. Since we want to obtain control over the domain, we would read the NTDS.dit and the System hive (more on this later). To start our attack path, lets start by resetting the password of audit2020. While we don't have code exeuction on the computer to do this, we can use the MSRPC service to our advantage. 
 
