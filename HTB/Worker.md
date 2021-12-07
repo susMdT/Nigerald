@@ -1,6 +1,6 @@
 ---
-title: Hack The Box&#58; Blackfield
-permalink: /HTB/Blackfield
+title: Hack The Box&#58; Worker
+permalink: /HTB/Worker
 layout: default
 classes: wide
 ---
